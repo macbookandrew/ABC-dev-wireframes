@@ -1,13 +1,13 @@
 {
-  "name": "foundation-sites-template",
+  "name": "ABC-mockup",
   "version": "1.0.0",
   "authors": [
-    "ZURB <foundation@zurb.com>"
+    "Andrew Minion <andrew@andrewrminion.com>"
   ],
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Wireframes for new ABC site.",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "http://foundation.zurb.com",
+  "homepage": "http://dev.ambassadors.edu",
   "dependencies": {
     "foundation-sites": "~6.0.0",
     "motion-ui": "~1.1.0"
