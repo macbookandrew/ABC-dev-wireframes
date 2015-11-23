@@ -5,7 +5,7 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-@include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -41,3 +41,55 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+.header {
+    background-color: $primary-color;
+    color: $white;
+    text-align: center;
+}
+
+.main-nav {
+    background-color: $secondary-color;
+
+    .top_level_link > a { color: $white; }
+
+    .dropdown.menu .has-submenu.is-down-arrow > a:after { border-top-color: white; }
+
+    .submenu li { padding: 0 0.5em; }
+}
+
+.main-content {
+    background: url('../img/Admin-Building-2014.jpg') no-repeat center top / contain;
+}
+
+.card {
+    margin: 2em 0;
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.news, .events {
+    .banner { margin-bottom: 1em; }
+}
+
+.news {
+    .thumb {
+        float: left;
+        margin: 0 1em 1em 0;
+    }
+}
+
+.events {
+    .thumb {
+        float: right;
+        margin: 0 0 1em 1em;
+    }
+}
+
+.main-footer {
+    background-color: $dark-gray;
+}
