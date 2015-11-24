@@ -59,8 +59,11 @@
     .submenu li { padding: 0 0.5em; }
 }
 
-.main-content {
-    background: url('../img/Admin-Building-2014.jpg') no-repeat center top / contain;
+.main-background {
+    background: url("../img/Admin-Building-2014.jpg") no-repeat center top/100%;
+    height: 40vh;
+    width: 100%;
+    position: absolute;
 }
 
 .card {
