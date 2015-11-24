@@ -16,17 +16,22 @@
         </div>
     </div>
 
-    <nav class="main-nav" role="navigation">
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+
+    <nav class="main-nav top-bar" id="main-menu" role="navigation">
         <div class="row columns">
             <ul class="horizontal menu" data-responsive-menu="drilldown medium-dropdown" >
                 <li class="top_level_link nav_link_selected"><a class="nav_link_home" href="#" title="Ambassador Baptist College">Home</a></li>
 
                 <li class="top_level_link"><a href="#">Admissions</a>
-                    <ul>
+                    <ul data-submenu>
                         <li><a href="#">Application Process</a></li>
                         <li><a href="#">Undergraduate Admissions</a></li>
                         <li class="sub_menu"><a href="#">Graduate Admissions</a>
-                            <ul>
+                            <ul data-submenu>
                                 <li><a href="#">About Graduate Studies</a></li>
                                 <li><a href="#">Ten Reasons for Graduate School</a></li>
                             </ul>
@@ -38,7 +43,7 @@
                     </ul>
                 </li>
                 <li class="top_level_link"><a href="#">Academics</a>
-                    <ul>
+                    <ul data-submenu>
                         <li><a href="#">Our Mission</a></li>
                         <li><a href="#">Catalog</a></li>
                         <li><a href="#">Courses</a></li>
@@ -48,7 +53,7 @@
                     </ul>
                 </li>
                 <li class="top_level_link"><a href="#">Students</a>
-                    <ul>
+                    <ul data-submenu>
                         <li class="sub_menu"><a href="#">Student Life</a>
                             <ul>
                                 <li><a href="#">Dining</a></li>
@@ -62,7 +67,7 @@
                     </ul>
                 </li>
                 <li class="top_level_link"><a href="#">About Us</a>
-                    <ul>
+                    <ul data-submenu>
                         <li><a href="#">Doctrinal Statement</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">Textual Position</a></li>
@@ -72,13 +77,13 @@
                     </ul>
                 </li>
                 <li class="top_level_link"><a href="#">News &amp; Events</a>
-                    <ul>
+                    <ul data-submenu>
                         <li><a href="#">News Archive</a></li>
                         <li><a href="#">Calendar</a></li>
                         <li><a href="#">Chapel Speakers</a></li>
                         <li><a href="#">“The Ambassador”</a></li>
                         <li class="sub_menu"><a href="#">Special Events</a>
-                            <ul>
+                            <ul data-submenu>
                                 <li><a href="#">ABC Classic</a></li>
                                 <li><a href="#">Alumni Days</a></li>
                                 <li><a href="#">Bible Conference</a></li>
@@ -94,7 +99,7 @@
                     </ul>
                 </li>
                 <li class="top_level_link"><a href="#">Resources</a>
-                    <ul>
+                    <ul data-submenu>
                         <li><a href="#">“The Ambassador” Archive</a></li>
                         <li><a href="#">Library</a></li>
                         <li><a href="#">Sermons</a></li>
@@ -108,7 +113,7 @@
                     </ul>
                 </li>
                 <li class="top_level_link"><a href="#">Support</a>
-                    <ul>
+                    <ul data-submenu>
                         <li><a href="#">Online Donations</a></li>
                         <li><a href="#">Graduation Offering</a></li>
                         <li><a href="#">T.E.M. Club</a></li>
@@ -118,7 +123,7 @@
                     </ul>
                 </li>
                 <li class="top_level_link"><a href="#">Contact Us</a>
-                    <ul>
+                    <ul data-submenu>
                         <li><a href="#">Contact Information</a></li>
                         <li><a href="#">Request Information</a></li>
                         <li><a href="#">Directions</a></li>
@@ -126,30 +131,28 @@
                         <li><a href="#">Social Media</a></li>
                     </ul>
                 </li>
-
-
             </ul>
         </div>
     </nav>
 
     <div class="main-content">
         <div class="main-background"></div>
-        <div class="row cards">
-            <div class="large-4 columns">
+        <div class="row align-center cards">
+            <div class="small-10 medium-4 columns">
                 <div class="callout card">
                     <img src="http://placehold.it/400x400?text=placeholder"/>
                     <h2>Video</h2>
                 </div>
             </div>
 
-            <div class="large-4 columns">
+            <div class="small-10 medium-4 columns">
                 <div class="callout card">
                     <img src="http://placehold.it/400x400?text=placeholder"/>
-                    <h2>Sermons/Streaming</h2>
+                    <h2>Sermons</h2>
                 </div>
             </div>
 
-            <div class="large-4 columns">
+            <div class="small-10 medium-4 columns">
                 <div class="callout card">
                     <img src="http://placehold.it/400x400?text=placeholder"/>
                     <h2>Info</h2>
@@ -158,26 +161,29 @@
         </div>
 
         <div class="row">
-            <div class="large-6 columns news">
+            <div class="small-12 medium-6 columns news">
                 <h2>News</h2>
                 <section class="news item">
                     <h3>News Item 1</h3>
                     <img src="http://placehold.it/600x150?text=placeholder" class="banner" />
+                    <h4 class="date">November 24, 2015</h4>
                     <p>Qui robusta ristretto, as cup strong, id acerbic, single shot cup, rich, instant, decaffeinated french press beans sugar caffeine at filter crema to go dark at percolator. Single shot, roast medium, plunger pot cortado, whipped caffeine espresso coffee strong, dripper mazagran cortado, extraction eu mazagran so acerbic et con panna aromatic.</p>
                 </section>
                 <section class="news item">
                     <h3>News Item 2</h3>
                     <img src="http://placehold.it/100x100?text=placeholder" class="thumb" />
+                    <h4 class="date">November 15, 2015</h4>
                     <p>Qui robusta ristretto, as cup strong, id acerbic, single shot cup, rich, instant, decaffeinated french press beans sugar caffeine at filter crema to go dark at percolator. Single shot, roast medium, plunger pot cortado.</p>
                 </section>
                 <section class="news item">
                     <h3>News Item 3</h3>
                     <img src="http://placehold.it/100x100?text=placeholder" class="thumb" />
+                    <h4 class="date">October 31, 2015</h4>
                     <p>Qui robusta ristretto, as cup strong, id acerbic, single shot cup, rich, instant, decaffeinated french press beans sugar caffeine at filter crema to go dark at percolator. Single shot, roast medium, plunger pot cortado, whipped caffeine espresso coffee strong, dripper mazagran cortado.</p>
                 </section>
             </div><!-- .news -->
 
-            <div class="large-6 columns events">
+            <div class="small-12 medium-6 columns events">
                 <h2>Events</h2>
                 <section class="news item">
                     <h3>Event 1</h3>
@@ -187,13 +193,13 @@
                 </section>
                 <section class="news item">
                     <h3>Event 2</h3>
-                    <h4 class="date">December 31, 2015</h4>
+                    <h4 class="date">January 31, 2016</h4>
                     <img src="http://placehold.it/100x100?text=placeholder" class="thumb" />
                     <p>Qui robusta ristretto, as cup strong, id acerbic, single shot cup, rich, instant, decaffeinated french press beans sugar caffeine at filter crema to go dark at percolator.</p>
                 </section>
                 <section class="news item">
                     <h3>Event 3</h3>
-                    <h4 class="date">December 31, 2015</h4>
+                    <h4 class="date">February 14, 2016</h4>
                     <img src="http://placehold.it/100x100?text=placeholder" class="thumb" />
                     <p>Qui robusta ristretto, as cup strong, id acerbic, single shot cup, rich, instant, decaffeinated french press beans sugar caffeine at filter crema to go dark at percolator.</p>
                 </section>
