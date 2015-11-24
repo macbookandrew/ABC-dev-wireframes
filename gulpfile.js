@@ -9,6 +9,7 @@ var sassPaths = [
 
 gulp.task('sass', function() {
   return gulp.src('./scss/app.scss')
+    .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: sassPaths
     })
@@ -16,6 +17,7 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
+    .pipe($.sourcemaps.write('./maps'))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 });
